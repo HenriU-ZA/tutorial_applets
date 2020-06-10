@@ -34,3 +34,5 @@ def get_access_token(request_token, oauth_verifier):
 
     response, content = client.request(constants.ACCESS_TOKEN_URL, 'POST')
     return dict(urlparse.parse_qsl(content.decode('utf-8')))
+
+
